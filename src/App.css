@@ -1,0 +1,164 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+
+.home-container {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: space-between; /* Ensure items stay aligned */
+  align-items: center;
+  background-color: #c254f6;
+  padding: 20px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.logout-button {
+  background-color: #ff4b5c;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.logout-button:hover {
+  background-color: #d43c4e;
+}
+
+/* Create Task */
+.create-task-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.create-task-button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-task-button:hover {
+  background-color: #218838;
+}
+
+/* Task List */
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.task-item {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 15px;
+  width: 300px;
+}
+
+.task-details {
+  margin-bottom: 10px;
+}
+
+.task-title {
+  font-weight: bold;
+  display: block;
+}
+
+.task-status {
+  display: block;
+  color: #555;
+}
+
+.task-due-date {
+  display: block;
+  color: #777;
+}
+
+.task-actions button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.view-button:hover {
+  background-color: #0056b3;
+}
+
+.update-button {
+  background-color: #ffc107;
+  color: black;
+}
+
+.update-button:hover {
+  background-color: #e0a800;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack the header content vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+    font-size: 1.5rem; /* Slightly reduce font size for smaller screens */
+  }
+
+  .logout-button {
+    margin-top: 10px; /* Add space below the Welcome text */
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem; /* Further reduce font size for very small screens */
+  }
+
+  .logout-button {
+    padding: 8px 16px; /* Reduce padding for small screens */
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}

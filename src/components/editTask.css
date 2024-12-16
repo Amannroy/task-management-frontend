@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff); /* Subtle gradient for elegance */
+    color: #333;
+}
+
+/* Task Form Container */
+.myTask {
+    max-width: 600px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Heading */
+.myTask h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2980b9; /* Stylish underline */
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between form elements */
+}
+
+/* Labels */
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 5px;
+    text-align: left;
+    display: block;
+}
+
+/* Input Fields */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    background-color: #ecf0f1;
+    transition: border-color 0.3s ease;
+}
+
+/* Input Focus */
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #2980b9; /* Highlight on focus */
+    outline: none;
+}
+
+/* Textarea */
+textarea {
+    height: 100px;
+    resize: none; /* Prevent resizing for consistent UI */
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    background-color: #1f5a8b;
+    transform: scale(1.05);
+}
+
+/* Cancel Button */
+button[type="button"] {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+button[type="button"]:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .myTask {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .myTask h1 {
+        font-size: 1.8rem;
+    }
+
+    input[type="text"],
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

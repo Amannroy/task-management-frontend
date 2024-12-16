@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f0f0f0, #ffffff); /* Soft gradient background */
+    color: #333;
+}
+
+/* Task Form Container */
+.myPost {
+    max-width: 600px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Elegant shadow */
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Heading */
+.myPost h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #2980b9;
+    padding-bottom: 10px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between input fields */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus State */
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #2980b9; /* Blue focus border */
+    outline: none;
+}
+
+/* Textarea */
+textarea {
+    height: 120px;
+    resize: none; /* Prevent resizing */
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #2980b9;
+    color: white;
+}
+
+/* Button Hover */
+button:hover {
+    background-color: #1f5a8b;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .myPost {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .myPost h1 {
+        font-size: 1.8rem;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+}
